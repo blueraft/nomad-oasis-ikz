@@ -28,9 +28,9 @@ north:
         mount_path: /home/jovyan
         file_extensions:
           - ipynb
-        # maintainer:
-        #   - name: Michael Götte
-        #     email: michael.goette@helmholtz-berlin.de
+        maintainer:
+          - name: Sebastian Brückner
+            email: sebastian.brueckner@ikz-berlin.de
       # gwyddion:
         # short_description: A NORTH container with gwyddion
         # description: A NORTH container with gwyddion for AFM analysis.
