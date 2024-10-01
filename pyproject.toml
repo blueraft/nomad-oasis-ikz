@@ -40,17 +40,17 @@ plugins = [
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
 
-  "nomad-material-processing @ git+https://github.com/FAIRmat-NFDI/nomad-material-processing.git@9eb83aa07a5647726af2654366ec91d271ab8593",
-  "nomad-measurements @	git+https://github.com/FAIRmat-NFDI/nomad-measurements.git@9df037ab6ba46e00f9b58c6c7498dfb3e576d7ef",
-  "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@d94f203320e6da5cbc439c323f71b75b3b5e1528",
-  "ikz_plugin @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@3bd921f2e3a7dd9805b67c30654f6d6797832539#subdirectory=IKZ_plugin",
-  "uv_vis_nir_transmission @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@245a82ddc24da5f8aaa79164e6669c18c2bc1572#subdirectory=transmission/transmission_plugin/uv_vis_nir_transmission_plugin",
-  "lakeshore-nomad-plugin @ git+https://github.com/IKZ-Berlin/lakeshore-nomad-plugin.git@35406777dbac424f674ad6c61b2c9bf206535859",
-  "laytec_epitt_plugin @ git+https://github.com/IKZ-Berlin/laytec_epitt_nomad_plugin.git@f4953ac4ecb55b7003dee323d7d7f473e49ab4e3",
-  "nomad-ikz-fz @ git+https://github.com/IKZ-Berlin/ikz-fz-nomad-plugin.git@14898bed8f2676b2f27d1690005a1f7b0cd51cbd",
-  "nomad_ikz_raman @ git+https://github.com/IKZ-Berlin/IKZ_raman.git@797a36fa985412e00527d4298f763eb2318a3ec4",
-  "nomad_ikz_omega_theta_xrd @ git+https://github.com/IKZ-Berlin/ikz-omega-theta-xrd.git@main", 
-  "statsmodels" 
+ # "nomad-material-processing @ git+https://github.com/FAIRmat-NFDI/nomad-material-processing.git@9eb83aa07a5647726af2654366ec91d271ab8593",
+ # "nomad-measurements @	git+https://github.com/FAIRmat-NFDI/nomad-measurements.git@9df037ab6ba46e00f9b58c6c7498dfb3e576d7ef",
+ # "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@d94f203320e6da5cbc439c323f71b75b3b5e1528",
+ # "ikz_plugin @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@3bd921f2e3a7dd9805b67c30654f6d6797832539#subdirectory=IKZ_plugin",
+ # "uv_vis_nir_transmission @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@245a82ddc24da5f8aaa79164e6669c18c2bc1572#subdirectory=transmission/transmission_plugin/uv_vis_nir_transmission_plugin",
+ # "lakeshore-nomad-plugin @ git+https://github.com/IKZ-Berlin/lakeshore-nomad-plugin.git@35406777dbac424f674ad6c61b2c9bf206535859",
+ # "laytec_epitt_plugin @ git+https://github.com/IKZ-Berlin/laytec_epitt_nomad_plugin.git@f4953ac4ecb55b7003dee323d7d7f473e49ab4e3",
+ # "nomad-ikz-fz @ git+https://github.com/IKZ-Berlin/ikz-fz-nomad-plugin.git@14898bed8f2676b2f27d1690005a1f7b0cd51cbd",
+ # "nomad_ikz_raman @ git+https://github.com/IKZ-Berlin/IKZ_raman.git@797a36fa985412e00527d4298f763eb2318a3ec4",
+ # "nomad_ikz_omega_theta_xrd @ git+https://github.com/IKZ-Berlin/ikz-omega-theta-xrd.git@main", 
+ # "statsmodels" 
 ]
 jupyter = [
   "voila",
