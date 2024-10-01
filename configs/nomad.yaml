@@ -22,15 +22,15 @@ north:
       voila:
         short_description: A jupyter webapp container with voila
         description: A jupyter hub webapp container with voila installed.
-        image: gitlab-registry.mpcdf.mpg.de/nomad-lab/north/voila:latest
+        image: ghcr.io/ikz-berlin/nomad-oasis-ikz/jupyter:main
         path_prefix: voila/render
         with_path: true
         mount_path: /home/jovyan
         file_extensions:
           - ipynb
-        maintainer:
-          - name: Michael Götte
-            email: michael.goette@helmholtz-berlin.de
+        # maintainer:
+        #   - name: Michael Götte
+        #     email: michael.goette@helmholtz-berlin.de
       # gwyddion:
         # short_description: A NORTH container with gwyddion
         # description: A NORTH container with gwyddion for AFM analysis.
