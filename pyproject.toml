@@ -52,6 +52,7 @@ plugins = [
   "nomad_ikz_omega_theta_xrd @ git+https://github.com/IKZ-Berlin/ikz-omega-theta-xrd.git@main", 
   "statsmodels" 
 ]
+jupyter = []
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
 
 [tool.uv]
