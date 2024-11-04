@@ -1087,20 +1087,6 @@ wheels = [
 ]
 
 [[package]]
-name = "fairmat-readers-transmission"
-version = "0.0.2"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "pint" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/17/71/5fd70ceb6fa7991e683a19ee60dedbb73348365d97e69c68e8c0481eacbc/fairmat_readers_transmission-0.0.2.tar.gz", hash = "sha256:9038c2402e91984ecd79c53b5adca1bf981b7b62be3405d6830dc84166fc2ea2", size = 46920 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/5b/95/0e87572ea39a8e04aafa41b856f8ab089b7a7d5bd3e8fec2bef32bf1b058/fairmat_readers_transmission-0.0.2-py3-none-any.whl", hash = "sha256:bce6eba9a0160afa1f21dc46d12cc1b5754ea0c9db66732bea84992d3ecde9e4", size = 16647 },
-]
-
-[[package]]
 name = "fairmat-readers-xrd"
 version = "0.0.7"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -2899,6 +2885,7 @@ plugins = [
     { name = "nomad-measurements" },
     { name = "rtg-sims" },
     { name = "statsmodels" },
+    { name = "uv-vis-nir-transmission" },
 ]
 
 [package.metadata]
@@ -2912,7 +2899,7 @@ requires-dist = [
     { name = "nomad-analysis", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-analysis.git?rev=ada8b1638f7aa88d40f65b5536439e644cc79fe1#ada8b1638f7aa88d40f65b5536439e644cc79fe1" },
     { name = "nomad-ikz-fz", marker = "extra == 'plugins'", git = "https://github.com/IKZ-Berlin/ikz-fz-nomad-plugin.git?rev=14898bed8f2676b2f27d1690005a1f7b0cd51cbd#14898bed8f2676b2f27d1690005a1f7b0cd51cbd" },
     { name = "nomad-ikz-omega-theta-xrd", marker = "extra == 'plugins'", git = "https://github.com/IKZ-Berlin/ikz-omega-theta-xrd.git?rev=2f9e43f1507ab41d5af22baa0d45b560e294fbbb#2f9e43f1507ab41d5af22baa0d45b560e294fbbb" },
-    { name = "nomad-ikz-plugin", marker = "extra == 'plugins'", git = "https://github.com/IKZ-Berlin/nomad-ikz-plugin.git?rev=1632a37e9c21e35a444939d12b48821eb847eb3e#1632a37e9c21e35a444939d12b48821eb847eb3e" },
+    { name = "nomad-ikz-plugin", marker = "extra == 'plugins'", git = "https://github.com/IKZ-Berlin/nomad-ikz-plugin.git?rev=a9beb63eef65f03509cc4e59594a454e12721858#a9beb63eef65f03509cc4e59594a454e12721858" },
     { name = "nomad-ikz-raman", marker = "extra == 'plugins'", git = "https://github.com/IKZ-Berlin/IKZ_raman.git?rev=797a36fa985412e00527d4298f763eb2318a3ec4#797a36fa985412e00527d4298f763eb2318a3ec4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
@@ -2920,6 +2907,7 @@ requires-dist = [
     { name = "nomad-measurements", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-measurements.git?rev=237dd2b6fc6152dbb8370a24dce26e483fb8ba78#237dd2b6fc6152dbb8370a24dce26e483fb8ba78" },
     { name = "rtg-sims", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=rtg-sims&rev=de012ac8820dbb514f5dd73aafdf46bf2a879481#de012ac8820dbb514f5dd73aafdf46bf2a879481" },
     { name = "statsmodels", marker = "extra == 'plugins'" },
+    { name = "uv-vis-nir-transmission", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=transmission%2Ftransmission_plugin%2Fuv_vis_nir_transmission_plugin&rev=245a82ddc24da5f8aaa79164e6669c18c2bc1572#245a82ddc24da5f8aaa79164e6669c18c2bc1572" },
     { name = "voila", marker = "extra == 'jupyter'" },
 ]
 
@@ -2942,7 +2930,7 @@ dependencies = [
 [[package]]
 name = "nomad-ikz-plugin"
 version = "0.1.0"
-source = { git = "https://github.com/IKZ-Berlin/nomad-ikz-plugin.git?rev=1632a37e9c21e35a444939d12b48821eb847eb3e#1632a37e9c21e35a444939d12b48821eb847eb3e" }
+source = { git = "https://github.com/IKZ-Berlin/nomad-ikz-plugin.git?rev=a9beb63eef65f03509cc4e59594a454e12721858#a9beb63eef65f03509cc4e59594a454e12721858" }
 dependencies = [
     { name = "lakeshore-nomad-plugin" },
     { name = "laytec-epitt-plugin" },
@@ -2950,7 +2938,6 @@ dependencies = [
     { name = "nomad-lab" },
     { name = "nomad-material-processing" },
     { name = "nomad-measurements" },
-    { name = "transmission" },
 ]
 
 [[package]]
@@ -5185,16 +5172,6 @@ wheels = [
 ]
 
 [[package]]
-name = "transmission"
-version = "0.0.0"
-source = { git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=transmission%2Ftransmission_plugin%2Fuv_vis_nir_transmission_plugin&rev=de012ac8820dbb514f5dd73aafdf46bf2a879481#de012ac8820dbb514f5dd73aafdf46bf2a879481" }
-dependencies = [
-    { name = "fairmat-readers-transmission" },
-    { name = "nomad-lab" },
-    { name = "nomad-material-processing" },
-]
-
-[[package]]
 name = "types-python-dateutil"
 version = "2.9.0.20240906"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -5288,6 +5265,14 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/2d/f4/511141abcc794a5fecaeb7c62138a68331453e21a4b1ad2e52250d5af95d/uv-0.4.17-py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:8acb510475dd8dbce71533384b95a8b2ad204f10081c92d9d012d193bd4df884", size = 12620663 },
     { url = "https://files.pythonhosted.org/packages/18/f5/cb3eed07b1db5fcfbe638132fbde5fdf9031039fe82fdf30ebf00ce7bc19/uv-0.4.17-py3-none-win32.whl", hash = "sha256:7b27e69454d8f65d800bc61a3d05288cacf8e56b9b716b629b2b6977e85ceabe", size = 11956476 },
     { url = "https://files.pythonhosted.org/packages/a5/25/3f80d90fb147923bbae53973a63e6da0744a9d083285933fce5bfbe014fe/uv-0.4.17-py3-none-win_amd64.whl", hash = "sha256:6141f08aad242372dff4b529b9d26c814e151e95d1a8c85d645a7eb11b0cb34a", size = 13440345 },
+]
+
+[[package]]
+name = "uv-vis-nir-transmission"
+version = "0.0.0"
+source = { git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=transmission%2Ftransmission_plugin%2Fuv_vis_nir_transmission_plugin&rev=245a82ddc24da5f8aaa79164e6669c18c2bc1572#245a82ddc24da5f8aaa79164e6669c18c2bc1572" }
+dependencies = [
+    { name = "nomad-lab" },
 ]
 
 [[package]]
