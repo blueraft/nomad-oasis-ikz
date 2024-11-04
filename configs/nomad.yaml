@@ -107,7 +107,7 @@ plugins:
 
   options:
     schemas/RTGSIMS:  
-      python_package: nomadschemartgsims
+      python_package: rtg_sims
     parsers/uv_vis_nir_transmission:
       python_package: uv_vis_nir_transmission.parser
 ui:
