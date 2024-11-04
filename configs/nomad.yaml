@@ -127,9 +127,9 @@ ui:
         label: PLD Layers
         filters:
           include:
-            - '*#ikz_plugin.pld.schema.*'
+            - '*#nomad_ikz_plugin.pld.schema.*'
         # Path used in the URL, must be unique
-        path: 'ikz_plugin/pld'
+        path: 'nomad_ikz_plugin/pld'
         # Used to categorize apps in the explore menu
         category: 'Experiment'
         # Brief description used in the app menu
@@ -141,13 +141,13 @@ ui:
           selected:
             - entry_name
             - results.material.elements
-            - data.process_conditions.number_of_pulses#ikz_plugin.pld.schema.IKZPLDLayer
-            - data.process_conditions.pressure#ikz_plugin.pld.schema.IKZPLDLayer
-            - data.process_conditions.laser_energy#ikz_plugin.pld.schema.IKZPLDLayer
-            - data.process_conditions.growth_temperature#ikz_plugin.pld.schema.IKZPLDLayer
-            - data.process_conditions.laser_repetition_rate#ikz_plugin.pld.schema.IKZPLDLayer
-            - data.process_conditions.sample_to_target_distance#ikz_plugin.pld.schema.IKZPLDLayer
-            - data.geometry.height#ikz_plugin.pld.schema.IKZPLDLayer
+            - data.process_conditions.number_of_pulses#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            - data.process_conditions.pressure#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            - data.process_conditions.laser_energy#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            - data.process_conditions.growth_temperature#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            - data.process_conditions.laser_repetition_rate#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            - data.process_conditions.sample_to_target_distance#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            - data.geometry.height#nomad_ikz_plugin.pld.schema.IKZPLDLayer
           options:
             entry_name:
               label: 'Layer name'
@@ -167,45 +167,45 @@ ui:
             results.material.elements:
               label: 'Elements'
               align: 'left'
-            data.process_conditions.number_of_pulses#ikz_plugin.pld.schema.IKZPLDLayer:
+            data.process_conditions.number_of_pulses#nomad_ikz_plugin.pld.schema.IKZPLDLayer:
               label: 'Number of pulses'
               align: 'left'
-            data.process_conditions.pressure#ikz_plugin.pld.schema.IKZPLDLayer:
+            data.process_conditions.pressure#nomad_ikz_plugin.pld.schema.IKZPLDLayer:
               label: 'Pressure'
               align: 'left'
               unit: 'mbar'
               format:
                 decimals: 2
                 mode: 'scientific'
-            data.process_conditions.laser_energy#ikz_plugin.pld.schema.IKZPLDLayer:
+            data.process_conditions.laser_energy#nomad_ikz_plugin.pld.schema.IKZPLDLayer:
               label: 'Laser energy'
               align: 'left'
               unit: 'mJ'
               format:
                 decimals: 2
                 mode: 'scientific'
-            data.process_conditions.growth_temperature#ikz_plugin.pld.schema.IKZPLDLayer:
+            data.process_conditions.growth_temperature#nomad_ikz_plugin.pld.schema.IKZPLDLayer:
               label: 'Growth temperature'
               align: 'left'
               unit: 'celsius'
               format:
                 decimals: 2
                 mode: 'scientific'
-            data.process_conditions.laser_repetition_rate#ikz_plugin.pld.schema.IKZPLDLayer:
+            data.process_conditions.laser_repetition_rate#nomad_ikz_plugin.pld.schema.IKZPLDLayer:
               label: 'Laser repetition rate'
               align: 'left'
               unit: 'Hz'
               format:
                 decimals: 2
                 mode: 'scientific'
-            data.process_conditions.sample_to_target_distance#ikz_plugin.pld.schema.IKZPLDLayer:
+            data.process_conditions.sample_to_target_distance#nomad_ikz_plugin.pld.schema.IKZPLDLayer:
               label: 'Sample to target distance'
               align: 'left'
               unit: 'mm'
               format:
                 decimals: 2
                 mode: 'scientific'
-            data.geometry.height#ikz_plugin.pld.schema.IKZPLDLayer:
+            data.geometry.height#nomad_ikz_plugin.pld.schema.IKZPLDLayer:
               label: 'Layer thickness'
               align: 'left'
               unit: 'nm'
@@ -213,7 +213,7 @@ ui:
                 decimals: 2
                 mode: 'scientific'
         filters_locked:
-          section_defs.definition_qualified_name: ikz_plugin.pld.schema.IKZPLDLayer
+          section_defs.definition_qualified_name: nomad_ikz_plugin.pld.schema.IKZPLDLayer
         filter_menus:
           options:
             material:
@@ -244,7 +244,7 @@ ui:
             autorange: false
             nbins: 30
             scale: linear
-            quantity: data.process_conditions.number_of_pulses#ikz_plugin.pld.schema.IKZPLDLayer
+            quantity: data.process_conditions.number_of_pulses#nomad_ikz_plugin.pld.schema.IKZPLDLayer
             layout:
               xxl:
                 minH: 3
@@ -286,7 +286,7 @@ ui:
             autorange: false
             nbins: 30
             scale: linear
-            quantity: data.process_conditions.pressure#ikz_plugin.pld.schema.IKZPLDLayer
+            quantity: data.process_conditions.pressure#nomad_ikz_plugin.pld.schema.IKZPLDLayer
             layout:
               xxl:
                 minH: 3
@@ -328,7 +328,7 @@ ui:
             autorange: false
             nbins: 30
             scale: linear
-            quantity: data.process_conditions.laser_energy#ikz_plugin.pld.schema.IKZPLDLayer
+            quantity: data.process_conditions.laser_energy#nomad_ikz_plugin.pld.schema.IKZPLDLayer
             layout:
               xxl:
                 minH: 3
@@ -370,7 +370,7 @@ ui:
             autorange: false
             nbins: 30
             scale: linear
-            quantity: data.process_conditions.growth_temperature#ikz_plugin.pld.schema.IKZPLDLayer
+            quantity: data.process_conditions.growth_temperature#nomad_ikz_plugin.pld.schema.IKZPLDLayer
             layout:
               xxl:
                 minH: 3
@@ -412,7 +412,7 @@ ui:
             autorange: false
             nbins: 30
             scale: linear
-            quantity: data.process_conditions.laser_repetition_rate#ikz_plugin.pld.schema.IKZPLDLayer
+            quantity: data.process_conditions.laser_repetition_rate#nomad_ikz_plugin.pld.schema.IKZPLDLayer
             layout:
               xxl:
                 minH: 3
@@ -454,7 +454,7 @@ ui:
             autorange: false
             nbins: 30
             scale: linear
-            quantity: data.process_conditions.sample_to_target_distance#ikz_plugin.pld.schema.IKZPLDLayer
+            quantity: data.process_conditions.sample_to_target_distance#nomad_ikz_plugin.pld.schema.IKZPLDLayer
             layout:
               xxl:
                 minH: 3
@@ -494,9 +494,9 @@ ui:
           - type: scatterplot
             autorange: true
             size: 1000
-            color: data.process_conditions.sample_to_target_distance#ikz_plugin.pld.schema.IKZPLDLayer
-            y: data.geometry.height#ikz_plugin.pld.schema.IKZPLDLayer
-            x: data.process_conditions.number_of_pulses#ikz_plugin.pld.schema.IKZPLDLayer
+            color: data.process_conditions.sample_to_target_distance#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            y: data.geometry.height#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            x: data.process_conditions.number_of_pulses#nomad_ikz_plugin.pld.schema.IKZPLDLayer
             layout:
               xxl:
                 minH: 3
@@ -536,9 +536,9 @@ ui:
           - type: scatterplot
             autorange: true
             size: 1000
-            color: data.process_conditions.number_of_pulses#ikz_plugin.pld.schema.IKZPLDLayer
-            y: data.geometry.height#ikz_plugin.pld.schema.IKZPLDLayer
-            x: data.process_conditions.sample_to_target_distance#ikz_plugin.pld.schema.IKZPLDLayer
+            color: data.process_conditions.number_of_pulses#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            y: data.geometry.height#nomad_ikz_plugin.pld.schema.IKZPLDLayer
+            x: data.process_conditions.sample_to_target_distance#nomad_ikz_plugin.pld.schema.IKZPLDLayer
             layout:
               xxl:
                 minH: 3
