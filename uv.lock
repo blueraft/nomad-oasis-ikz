@@ -2905,7 +2905,7 @@ requires-dist = [
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
     { name = "nomad-material-processing", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-material-processing.git?rev=8545ef374ac53169fe1e40be927a212a364ebda1#8545ef374ac53169fe1e40be927a212a364ebda1" },
     { name = "nomad-measurements", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-measurements.git?rev=237dd2b6fc6152dbb8370a24dce26e483fb8ba78#237dd2b6fc6152dbb8370a24dce26e483fb8ba78" },
-    { name = "rtg-sims", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=rtg-sims&rev=de012ac8820dbb514f5dd73aafdf46bf2a879481#de012ac8820dbb514f5dd73aafdf46bf2a879481" },
+    { name = "rtg-sims", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=rtg-sims&rev=c286f23d14dcb2e4dc32454f9ee1a2c467428c77#c286f23d14dcb2e4dc32454f9ee1a2c467428c77" },
     { name = "statsmodels", marker = "extra == 'plugins'" },
     { name = "uv-vis-nir-transmission", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=transmission%2Ftransmission_plugin%2Fuv_vis_nir_transmission_plugin&rev=245a82ddc24da5f8aaa79164e6669c18c2bc1572#245a82ddc24da5f8aaa79164e6669c18c2bc1572" },
     { name = "voila", marker = "extra == 'jupyter'" },
@@ -4459,7 +4459,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/7e/15/db784ef8c6c2f1f8d
 [[package]]
 name = "rtg-sims"
 version = "0.1.0"
-source = { git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=rtg-sims&rev=de012ac8820dbb514f5dd73aafdf46bf2a879481#de012ac8820dbb514f5dd73aafdf46bf2a879481" }
+source = { git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=rtg-sims&rev=c286f23d14dcb2e4dc32454f9ee1a2c467428c77#c286f23d14dcb2e4dc32454f9ee1a2c467428c77" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "nomad-material-processing" },
