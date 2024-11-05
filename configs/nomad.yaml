@@ -101,8 +101,7 @@ plugins:
     - 'laytec_epitt_plugin:laytec_parser'
     - 'rtg_sims:schema'
     - 'rtg_sims:parser'
-    - 'parsers/uv_vis_nir_transmission'
-    
+    - 'parsers/uv_vis_nir_transmission'    
     # - 'schemas/RTGSIMS'
     # - 'parsers/uv_vis_nir_transmission'
 
