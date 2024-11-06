@@ -2871,6 +2871,7 @@ jupyter = [
     { name = "ipydatagrid" },
     { name = "ipysheet" },
     { name = "jupyter-flex" },
+    { name = "pyopenssl" },
     { name = "voila" },
 ]
 plugins = [
@@ -2905,6 +2906,7 @@ requires-dist = [
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
     { name = "nomad-material-processing", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-material-processing.git?rev=8545ef374ac53169fe1e40be927a212a364ebda1#8545ef374ac53169fe1e40be927a212a364ebda1" },
     { name = "nomad-measurements", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-measurements.git?rev=237dd2b6fc6152dbb8370a24dce26e483fb8ba78#237dd2b6fc6152dbb8370a24dce26e483fb8ba78" },
+    { name = "pyopenssl", marker = "extra == 'jupyter'" },
     { name = "rtg-sims", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=rtg-sims&rev=c286f23d14dcb2e4dc32454f9ee1a2c467428c77#c286f23d14dcb2e4dc32454f9ee1a2c467428c77" },
     { name = "statsmodels", marker = "extra == 'plugins'" },
     { name = "uv-vis-nir-transmission", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git?subdirectory=transmission%2Ftransmission_plugin%2Fuv_vis_nir_transmission_plugin&rev=245a82ddc24da5f8aaa79164e6669c18c2bc1572#245a82ddc24da5f8aaa79164e6669c18c2bc1572" },
@@ -3824,6 +3826,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/07/03/26b2fb17c77ce1d288fc3178f497e6fa00209fe34d5777b67dfd899ffcdd/pymongo-4.6.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:bec8e4e88984be157408f1923d25869e1b575c07711cdbdde596f66931800934", size = 685081 },
     { url = "https://files.pythonhosted.org/packages/f0/31/a46446ddb446f3266a2e7769d38681c0e2a0b74436193701899d080768ad/pymongo-4.6.3-cp39-cp39-win32.whl", hash = "sha256:98877a9c4ad42df8253a12d8d17a3265781d1feb5c91c767bd153f88feb0b670", size = 467050 },
     { url = "https://files.pythonhosted.org/packages/a2/19/07a975963333abe9a1a8988c15636d6615411026e94b11adac16705763c4/pymongo-4.6.3-cp39-cp39-win_amd64.whl", hash = "sha256:6d5b35da9e16cda630baed790ffc3d0d01029d269523a7cec34d2ec7e6823e75", size = 472874 },
+]
+
+[[package]]
+name = "pyopenssl"
+version = "24.2.1"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "cryptography" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5d/70/ff56a63248562e77c0c8ee4aefc3224258f1856977e0c1472672b62dadb8/pyopenssl-24.2.1.tar.gz", hash = "sha256:4247f0dbe3748d560dcbb2ff3ea01af0f9a1a001ef5f7c4c647956ed8cbf0e95", size = 184323 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d9/dd/e0aa7ebef5168c75b772eda64978c597a9129b46be17779054652a7999e4/pyOpenSSL-24.2.1-py3-none-any.whl", hash = "sha256:967d5719b12b243588573f39b0c677637145c7a1ffedcd495a487e58177fbb8d", size = 58390 },
 ]
 
 [[package]]
