@@ -42,7 +42,7 @@ plugins = [
 
  "nomad-material-processing @ git+https://github.com/FAIRmat-NFDI/nomad-material-processing.git@8545ef374ac53169fe1e40be927a212a364ebda1",
  "nomad-measurements @	git+https://github.com/FAIRmat-NFDI/nomad-measurements.git@237dd2b6fc6152dbb8370a24dce26e483fb8ba78",
- "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@ada8b1638f7aa88d40f65b5536439e644cc79fe1",
+ "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@7f2fe10084953e2827389e2bcb42df6b106ab484",
  # "ikz_plugin @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@3bd921f2e3a7dd9805b67c30654f6d6797832539#subdirectory=IKZ_plugin",
  #"nomad-ikz-plugin @git+https://github.com/IKZ-Berlin/nomad-ikz-plugin.git@1632a37e9c21e35a444939d12b48821eb847eb3e",
  "nomad-ikz-plugin",
