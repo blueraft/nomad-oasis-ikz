@@ -49,7 +49,7 @@ plugins = [
  "uv_vis_nir_transmission @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@245a82ddc24da5f8aaa79164e6669c18c2bc1572#subdirectory=transmission/transmission_plugin/uv_vis_nir_transmission_plugin",
  "lakeshore-nomad-plugin @ git+https://github.com/IKZ-Berlin/lakeshore-nomad-plugin.git@69a6deb3f0e99d7b0dc66714105dd62a56f157e9",
  "laytec_epitt_plugin @ git+https://github.com/IKZ-Berlin/laytec_epitt_nomad_plugin.git@f4953ac4ecb55b7003dee323d7d7f473e49ab4e3",
- "nomad-ikz-fz @ git+https://github.com/IKZ-Berlin/ikz-fz-nomad-plugin.git@14898bed8f2676b2f27d1690005a1f7b0cd51cbd",
+ "nomad-ikz-fz @ git+https://github.com/IKZ-Berlin/ikz-fz-nomad-plugin.git@9faf82053a432a935193e61c84cb289cd32ebc05",
  "nomad_ikz_raman @ git+https://github.com/IKZ-Berlin/IKZ_raman.git@797a36fa985412e00527d4298f763eb2318a3ec4",
  "nomad_ikz_omega_theta_xrd @ git+https://github.com/IKZ-Berlin/ikz-omega-theta-xrd.git@c8d6c0858b6dee06858a93114cba7558da6c57ab", 
  "rtg-sims @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@c286f23d14dcb2e4dc32454f9ee1a2c467428c77#subdirectory=rtg-sims", 
