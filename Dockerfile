@@ -119,7 +119,7 @@ EXPOSE 9000
 VOLUME /app/.volumes/fs
 
 
-FROM jupyter/datascience-notebook:lab-2025-01-13 AS jupyter
+FROM quay.io/jupyter/datascience-notebook:2025-01-13 AS jupyter
 
 # Fix: https://github.com/hadolint/hadolint/wiki/DL4006
 # Fix: https://github.com/koalaman/shellcheck/wiki/SC3014
