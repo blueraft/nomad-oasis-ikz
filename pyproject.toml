@@ -45,7 +45,7 @@ plugins = [
  "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@7f2fe10084953e2827389e2bcb42df6b106ab484",
  # "ikz_plugin @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@3bd921f2e3a7dd9805b67c30654f6d6797832539#subdirectory=IKZ_plugin",
  #"nomad-ikz-plugin @git+https://github.com/IKZ-Berlin/nomad-ikz-plugin.git@1632a37e9c21e35a444939d12b48821eb847eb3e",
- "nomad-ikz-plugin @ git+https://github.com/IKZ-Berlin/nomad-ikz-plugin.git@0ccb992dc9a0c165524329a8fe9102907ea50981",
+ "nomad-ikz-plugin",
  "uv_vis_nir_transmission @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git@245a82ddc24da5f8aaa79164e6669c18c2bc1572#subdirectory=transmission/transmission_plugin/uv_vis_nir_transmission_plugin",
  "lakeshore-nomad-plugin @ git+https://github.com/IKZ-Berlin/lakeshore-nomad-plugin.git@69a6deb3f0e99d7b0dc66714105dd62a56f157e9",
  "laytec_epitt_plugin @ git+https://github.com/IKZ-Berlin/laytec_epitt_nomad_plugin.git@f4953ac4ecb55b7003dee323d7d7f473e49ab4e3",
@@ -73,7 +73,7 @@ constraint-dependencies = ["hyperspy>=1.7.6"]
 prerelease = "disallow"
 
 [tool.uv.sources]
-nomad-ikz-plugin = { git = "https://github.com/IKZ-Berlin/nomad-ikz-plugin.git", rev = "v0.1.2" }
+nomad-ikz-plugin = { git = "https://github.com/IKZ-Berlin/nomad-ikz-plugin.git", rev = "9c1354915b8b3668ddbf8f82dfa68495bc1b9c46" }
 
 [tool.setuptools.packages.find]
 exclude = ["gui*", "docs*", "config*"]
